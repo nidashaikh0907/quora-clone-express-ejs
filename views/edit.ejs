@@ -9,12 +9,16 @@
 </head>
 <body>
     <h1>Edit Your Post</h1>
-    <div class="form-container">
+    <div class="form-card">
+        <div class="meta-info">
     <p>post id : <%= post.id %></p>
     <p>post username :<%=post.username %></p>
+    </div>
     <form method="post" action="/posts/<%= post.id %>?_method=patch">
-        <textarea name="content"><%= post.content %></textarea><br>
+        <textarea name="content"><%= post.content %></textarea>
+        <div class="btn-group">
         <button type="submit" class="btn primary">Submit</button>
+        </div>
     </form>
     </div>
 </body>

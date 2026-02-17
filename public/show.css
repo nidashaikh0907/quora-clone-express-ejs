@@ -1,13 +1,23 @@
 body {
   background: #f3f2ef;
   font-family: 'Poppins', sans-serif;
-  padding: 40px 0;
+padding: 0%;
+margin: 15px;
 }
 
-h2{
+h2 {
+  height:90px;
+  background-color: rgb(245, 222, 192);
   text-align: center;
-  color: #b92b27;
   margin-bottom: 40px;
+  color: #b92b27;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 0px 0px 20px 20px;
+ width: 90%;
+  margin: 0 auto 40px auto;
 }
 
 .container {
@@ -21,6 +31,7 @@ h2{
   border-radius: 12px;
   border: 1px solid #ddd;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .card p {
@@ -37,4 +48,23 @@ a {
   border: 1px solid #b92b27;
   color: #b92b27;
   text-decoration: none;
+}
+.post-id {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 12px;
+}
+.username {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.post-text {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+.card:hover{
+  transform: translateY(-3px);
+  transition: 0.3s ease;
 }
